@@ -15,8 +15,8 @@ var nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'haciatasoy98@gmail.com',
-        pass: 'mrtvawrkmswevwda'
+        user: 'gmailhesabi@gmail.com',
+        pass: 'Googlesifresi'
     }
 });
 
@@ -65,7 +65,7 @@ app.post('/Login', (req, res) => {
                 else {
                     
                     let mailOptions = {
-                        from: 'haciatasoy98@gmail.com',
+                        from: 'gmailhesabi@gmail.com',
                         to: emailmodel,
                         subject: 'Doðrulama Mail',
                         text: code.toString()
